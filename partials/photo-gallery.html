@@ -1,0 +1,62 @@
+ <main>
+    <section class="container">
+
+        <div class="row">
+            
+          <div class="col-xs-12  col-md-9 bodytext "><h2>Photo Gallery</h2>
+		  <!--<ol class="breadcrumb">
+                <li><a href="#/">Home</a>
+                </li>
+                <li class="active">About Church</li>
+            </ol>-->
+             
+		  <article>
+              			  <h4><!-- heading --></h4>
+          
+                
+       <div ng-controller="AlbumCtrl">
+           <div id="header">
+           <h2 class="map-text">{{currentImage.description}}</h2>
+            <div id="albumImage">
+                 <select ng-model="categories" ng-options="category for category in imageCategories" class="form-control form-inline" >
+                <option value="" >All</option>
+                </select> 
+                <br />
+                <img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}" class="img-thumbnail img-responsive" alt="Current Photograhpy">
+            </div>
+           
+    
+            <div id="thumbWrapper">
+                <ul id="thumbList">
+                    <li ng-repeat ="image in images | filter:categories" ng-click="setCurrentImage(image)" > 
+                        <img class="img-responsive img-thumbnail " ng-src="{{image.thumbnail}}"  alt="{{image.description}}">    
+                    </li>
+                </ul>
+      
+            </div>
+      </div>
+        </div>
+	
+       
+</article>
+              <br>
+            
+            </div>
+             <br> 
+            
+  <div class="col-xs-12  col-md-3">
+         <!-- sub content  -->
+            
+            
+    <article upcoming-tours></article>
+      
+</div>
+</div>
+          
+        
+</div>
+        
+        
+    </section>
+    </main>
+     <div class="divider"></div>
