@@ -154,9 +154,7 @@ h3{
      margin-top: 0;
     color: #fff;
     font-weight: 700;
-
-    
-    
+   
 }   
 
 h4 {
@@ -171,7 +169,7 @@ h4 {
     
 		}
 h5{    
-    font-size:1.8em;    
+    font-size:1.5em;    
     word-spacing: .15em;
     letter-spacing: 0.05em;
     margin-top: 0;
@@ -655,6 +653,9 @@ padding: 0;
     font-size:3em;    
     line-height:1.423;
     font-weight: 700; 
+    }
+    h5{
+    font-size:1.8em;  
     }
     
     .churchname{

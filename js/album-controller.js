@@ -79,20 +79,18 @@ function AlbumCtrl ($scope){
     {category : 'United Kingdom', image :'img/photos-gallery/uk/22.jpg', thumbnail:'img/photos-gallery/uk/22-th.jpg', description : 'United Kingdom Tours' },
     {category : 'United Kingdom', image :'img/photos-gallery/uk/23.jpg', thumbnail:'img/photos-gallery/uk/23-th.jpg', description : 'United Kingdom Tours' }, 
     {category : 'United Kingdom', image :'img/photos-gallery/uk/24.jpg', thumbnail:'img/photos-gallery/uk/24-th.jpg', description : 'United Kingdom Tours' },
-        
-        
-        
-        
-    ]; 
+      
+ ]; 
     
    $scope.currentImage = _.first($scope.images);
-   $scope.imageCategories = _.uniq(_.pluck($scope.images, 'category'));
-    
-    $scope.setCurrentImage= function (image){
+   $scope.imageCategories = _.uniq(_.pluck($scope.images, 'category'));    
+    $scope.setCurrentImage= function(image){
       $scope.currentImage = image;
     };
-
-
+    $scope.setCurrentImage2= function(category){
+      $scope.currentImage = category;
+    };
+  
 }
 
     

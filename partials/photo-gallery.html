@@ -25,7 +25,7 @@
                 <img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}" class="img-thumbnail img-responsive" alt="Current Photograhpy">
             </div>
            
-    
+    {{imageCategories}}
             <div id="thumbWrapper">
                 <ul id="thumbList">
                     <li ng-repeat ="image in images | filter:categories" ng-click="setCurrentImage(image)" > 
